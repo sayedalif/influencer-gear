@@ -30,16 +30,20 @@ nav h1 {
 
 /* * header */
 header {
-  margin: 20px 20px;
+  margin: 2rem 1rem;
   text-align: center;
 }
 .img-container {
   background-image: url(../images/Circle\ design.svg);
   background-size: cover;
-  padding-bottom: 14px;
+  padding-bottom: 1rem;
+}
+.img-container {
+  max-width: 70%;
+  margin: 1rem auto;
 }
 .img-container img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -59,7 +63,7 @@ header {
   line-height: 21px;
   font-feature-settings: 'liga' off;
   color: var(--heading-color);
-  margin: 15px 0;
+  margin: 1rem 0;
 }
 
 .btn {
@@ -102,8 +106,6 @@ header {
 }
 
 .white-card {
-  /* width: 329px;
-  height: 476px; */
   margin: 2rem 1rem;
   background-color: #ffffff;
   padding: 1rem 0;
@@ -112,6 +114,13 @@ header {
   box-shadow: 0px 0px 39px 7px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0px 0px 39px 7px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 0px 39px 7px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+}
+
+.white-card-center {
+  display: inline-block;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 .white-card-img {
@@ -131,6 +140,14 @@ header {
 .white-card-icon {
   display: inline-block;
   margin: 0.9rem 0.2rem 0 0;
+}
+
+.fa-star {
+  color: #fb8200;
+}
+
+.fa-star-half-alt {
+  color: #fb8200;
 }
 
 .white-card-text h1,
@@ -162,12 +179,82 @@ p {
   margin-top: 0.9rem;
 }
 
-.popular h1:nth-child(11) {
-  margin: 0 0 2rem 0;
+.popular h1:last-child {
+  margin: 0 0.7rem 2rem 0;
   font-weight: 700;
   font-style: normal;
   font-size: 16px;
   line-height: 24px;
   color: #e02c6dde;
   text-align: right;
+}
+
+/* footer section */
+
+footer {
+  background: #0a0826;
+  padding: 3rem;
+}
+
+footer h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  font-feature-settings: 'liga' off;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+}
+
+footer p {
+  text-align: center;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 29px;
+  color: #d9dbe1;
+}
+
+.footer-icon {
+  display: block;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.fa-facebook {
+  color: #4267b2;
+}
+
+.fa-instagram {
+  color: #c32aac;
+}
+
+.fa-twitter {
+  color: #00acee;
+}
+
+.fa-linkedin {
+  color: #0077b5;
+}
+
+/* * media query */
+
+/* * tablet mode */
+/* * header */
+@media only screen and (min-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  /* * product collection */
+
+  .popular-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
 }
