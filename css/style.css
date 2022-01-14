@@ -1,0 +1,80 @@
+:root {
+  --heading-color: #3a3a3a;
+}
+
+body {
+  margin: 0;
+}
+
+/* * mobile-first */
+
+/* * nav */
+
+nav {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.fa-lg {
+  font-size: 1.7rem;
+}
+
+nav h1 {
+  margin: 0;
+  display: inline-block;
+  margin: 0 10px 0 10px;
+  font-weight: bold;
+  line-height: 24px;
+  color: var(--heading-color);
+}
+
+/* * header */
+header {
+  margin: 20px 20px;
+}
+.img-container {
+  background-image: url(../images/Circle\ design.svg);
+  background-size: cover;
+  padding-bottom: 14px;
+}
+.img-container img {
+  width: 100%;
+  height: auto;
+}
+
+.header-heading {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 42px;
+  text-align: center;
+  color: var(--heading-color);
+  margin: 0;
+}
+
+.header-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  font-feature-settings: 'liga' off;
+  color: var(--heading-color);
+  margin: 15px 0;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 10px 24px;
+  width: 194px;
+  height: 44px;
+  color: #ffffff;
+  background: #e02c6d;
+  border-radius: 41px;
+}
+
+/* ! prb icon */
+
+.fa-arrow-right {
+  padding-right: 8px;
+}
