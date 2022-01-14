@@ -31,6 +31,7 @@ nav h1 {
 /* * header */
 header {
   margin: 20px 20px;
+  text-align: center;
 }
 .img-container {
   background-image: url(../images/Circle\ design.svg);
@@ -47,7 +48,6 @@ header {
   font-weight: bold;
   font-size: 28px;
   line-height: 42px;
-  text-align: center;
   color: var(--heading-color);
   margin: 0;
 }
@@ -57,7 +57,6 @@ header {
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
-  text-align: center;
   font-feature-settings: 'liga' off;
   color: var(--heading-color);
   margin: 15px 0;
@@ -74,7 +73,101 @@ header {
 }
 
 /* ! prb icon */
-
 .fa-arrow-right {
   padding-right: 8px;
+}
+
+/* ecommerce section */
+
+.ecommerce {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.ecommerce img {
+  max-width: 30%;
+}
+
+/* * product collection */
+
+.popular h1 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--heading-color);
+  margin: 4rem 0 0 0;
+}
+
+.white-card {
+  /* width: 329px;
+  height: 476px; */
+  margin: 2rem 1rem;
+  background-color: #ffffff;
+  padding: 1rem 0;
+
+  /* box shadow */
+  box-shadow: 0px 0px 39px 7px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 0px 39px 7px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 39px 7px rgba(0, 0, 0, 0.3);
+}
+
+.white-card-img {
+  max-width: 100%;
+  margin: 0 1rem;
+}
+
+.white-card-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.white-card-text {
+  padding: 0 1rem;
+}
+
+.white-card-icon {
+  display: inline-block;
+  margin: 0.9rem 0.2rem 0 0;
+}
+
+.white-card-text h1,
+p {
+  margin: 0;
+}
+
+.white-card-text h1 {
+  text-align: left;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 51px;
+  margin-top: 1rem;
+}
+
+.white-card-text p:nth-child(3) {
+  display: inline-block;
+  color: #5e6366;
+}
+
+.white-card-text p:last-child {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.018em;
+  color: #787885;
+  display: inline-block;
+  margin-top: 0.9rem;
+}
+
+.popular h1:nth-child(11) {
+  margin: 0 0 2rem 0;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #e02c6dde;
+  text-align: right;
 }
