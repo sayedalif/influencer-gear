@@ -28,6 +28,10 @@ nav h1 {
   color: var(--heading-color);
 }
 
+nav p {
+  display: none;
+}
+
 /* * header */
 header {
   margin: 2rem 1rem;
@@ -96,6 +100,11 @@ header {
 
 /* * product collection */
 
+.popular {
+  display: inline-block;
+  margin: 0;
+}
+
 .popular h1 {
   text-align: center;
   font-weight: 600;
@@ -106,13 +115,14 @@ header {
 }
 
 .popular-grid {
-  width: 57%;
+  display: inline-block;
+  width: 60%;
   margin: 0 auto;
 }
 
 .white-card {
-  width: 329px;
-  height: 476px;
+  width: 18.125rem;
+  height: 29.75rem;
   margin: 2rem 1rem;
   background-color: #ffffff;
   padding: 1rem 0;
@@ -244,8 +254,71 @@ footer p {
 
 /* * tablet mode */
 
+@media only screen and (min-width: 400px) {
+  /* * header */
+  body {
+    margin: 0;
+  }
+  header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .img-container {
+    order: 2;
+  }
+
+  /* * product collection */
+  .popular {
+    display: inline-block;
+    margin: 0 2.9rem;
+  }
+
+  .popular-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 60%;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  /* * header */
+  body {
+    margin: 0;
+  }
+  header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .img-container {
+    order: 2;
+  }
+
+  /* * product collection */
+  .popular {
+    display: inline-block;
+    margin: 0 6.8rem;
+  }
+
+  .popular-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 60%;
+    margin: 0;
+  }
+}
+
 @media only screen and (min-width: 600px) {
   /* * header */
+  body {
+    margin: 0;
+  }
   header {
     display: flex;
     justify-content: space-evenly;
@@ -281,9 +354,76 @@ footer p {
 
   /* * product collection */
 
+  .popular {
+    display: inline-block;
+    margin: 0 5.5rem;
+  }
+
+  .popular-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 60%;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  /* * header */
+  header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .img-container {
+    order: 2;
+  }
+
+  /* * product collection */
+
+  .popular {
+    display: inline-block;
+    margin: 0 8.35rem;
+  }
+
+  .popular-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 60%;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  /* * product collection */
+
+  .popular {
+    margin: 0 30rem;
+  }
+
   .popular-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    width: 60%;
+    margin: 0;
+  }
+  /* * nav */
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1rem auto;
+  }
+
+  nav p {
+    display: inline-block;
+    margin-right: 0.5rem;
+  }
+
+  nav span {
+    display: none;
   }
 }
