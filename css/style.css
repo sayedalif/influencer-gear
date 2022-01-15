@@ -16,7 +16,7 @@ nav {
 }
 
 .fa-lg {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 
 nav h1 {
@@ -28,7 +28,7 @@ nav h1 {
   color: var(--heading-color);
 }
 
-nav p {
+.nav-text {
   display: none;
 }
 
@@ -49,6 +49,11 @@ header {
 .img-container img {
   max-width: 100%;
   height: auto;
+}
+
+.header-text-container {
+  display: inline-block;
+  width: 80%;
 }
 
 .header-heading {
@@ -425,5 +430,18 @@ footer p {
 
   nav span {
     display: none;
+  }
+
+  /* * header */
+
+  .header-text-container {
+    display: inline-block;
+    width: 60%;
+  }
+
+  .header-text {
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
   }
 }
